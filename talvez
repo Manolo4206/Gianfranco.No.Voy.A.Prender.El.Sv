@@ -1,0 +1,4 @@
+sudo apt install podman
+podman create --name=playit -it --net=host -e SECRET_KEY=154fe27d991b93325f68294736fe934f9163e6b2f6f9d0a2b2bf7546728f715f ghcr.io/playit-cloud/playit-agent:0.17
+podman start playit
+podman logs -f playit 
